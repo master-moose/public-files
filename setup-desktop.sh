@@ -19,7 +19,7 @@ if [[ "$AGREEMENT" != "y" ]]; then
     echo "Installation aborted. You can rerun the script anytime to proceed."
     
     # Prompt to delete the script file
-    read -p "Do you want to delete the downloaded script file (ubuntu-desktop.sh)? (y/n): " DELETE_FILE
+    read -p "Do you want to delete the downloaded script file (setup-desktop.sh)? (y/n): " DELETE_FILE
     if [[ "$DELETE_FILE" == "y" ]]; then
         SCRIPT_PATH="$(realpath "$0")"
         rm -- "$SCRIPT_PATH"
@@ -96,7 +96,7 @@ echo "Password: (You set this during installation)"
 echo "RDP Address: Use your VPS IP address."
 
 # Prompt to delete the script file
-read -p "Do you want to delete the downloaded script file (ubuntu-desktop.sh)? (y/n): " DELETE_FILE
+read -p "Do you want to delete the downloaded script file (setup-desktop.sh)? (y/n): " DELETE_FILE
 if [[ "$DELETE_FILE" == "y" ]]; then
     SCRIPT_PATH="$(realpath "$0")"
     rm -- "$SCRIPT_PATH"
